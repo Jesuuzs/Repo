@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vision stratégique – Présentation</title>
+    <!-- Import Google font Inter for a modern aesthetic -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Chart.js and annotation plugin from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <!-- Date adapter for time scale (uses date-fns) -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.3.1/dist/chartjs-plugin-annotation.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-wrapper">
+        <img id="logo" src="public/assets/marianne.png" alt="Logo Marianne" class="logo" />
+      </div>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="#synthese">Synthèse</a>
+        <a href="#graphiques">Graphiques</a>
+        <a href="#tuiles">Tuiles</a>
+        <a href="#sources">Sources</a>
+        <a href="#apropos">À propos</a>
+      </nav>
+    </header>
+
+    <!-- Parallax background layer -->
+    <div class="parallax"></div>
+
+    <!-- Synthèse section: paragraphs linked to indicators -->
+    <section id="synthese" class="section">
+      <h1>Synthèse</h1>
+      <div id="paragraph-container"></div>
+    </section>
+
+    <!-- Graphiques section: interactive charts -->
+    <section id="graphiques" class="section">
+      <h1>Graphiques</h1>
+      <div id="charts-container" class="charts-grid"></div>
+    </section>
+
+    <!-- Tuiles section: flip cards consequence → solution -->
+    <section id="tuiles" class="section">
+      <h1>Tuiles</h1>
+      <div id="tiles-container" class="tiles-grid"></div>
+    </section>
+
+    <!-- Sources section -->
+    <section id="sources" class="section">
+      <h1>Sources</h1>
+      <ul id="sources-list"></ul>
+    </section>
+
+    <!-- À propos section -->
+    <section id="apropos" class="section">
+      <h1>À propos</h1>
+      <p>Cette application présente un aperçu des indicateurs et des conséquences abordés dans le rapport "Vision stratégique de sortie de crise pour la France". Elle est entièrement statique, fonctionnant sans backend, et peut être déployée facilement sur GitHub Pages.</p>
+    </section>
+
+    <!-- End of page / footer -->
+    <footer class="footer">
+      <p>Fin de la page</p>
+    </footer>
+
+    <!-- Main script -->
+    <script src="scripts.js" defer></script>
+  </body>
+</html>

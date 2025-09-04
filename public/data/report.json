@@ -1,0 +1,252 @@
+{
+  "meta": {
+    "titre": "Vision stratégique de sortie de crise pour la France",
+    "maj": "2025-09-04",
+    "auteur": "Synthèse IA"
+  },
+  "indicateurs": [
+    {
+      "id": "gdp_growth",
+      "label": "Croissance du PIB",
+      "unite": "%",
+      "series": [
+        { "date": "2023", "val": 1.4 },
+        { "date": "2024", "val": 1.1 },
+        { "date": "2025", "val": 1.2 }
+      ],
+      "source": {
+        "media": "Vision stratégique",
+        "titre": "Croissance économique",
+        "date": "2024-2025",
+        "url": ""
+      }
+    },
+    {
+      "id": "inflation_rate",
+      "label": "Inflation",
+      "unite": "%",
+      "series": [
+        { "date": "2022", "val": 5.2 },
+        { "date": "2023", "val": 4.9 },
+        { "date": "2024", "val": 2.0 }
+      ],
+      "source": {
+        "media": "Vision stratégique",
+        "titre": "Inflation",
+        "date": "2024-2025",
+        "url": ""
+      }
+    },
+    {
+      "id": "unemployment_total",
+      "label": "Taux de chômage",
+      "unite": "%",
+      "series": [
+        { "date": "2023", "val": 7.1 },
+        { "date": "2024", "val": 7.5 },
+        { "date": "2025", "val": 7.5 }
+      ],
+      "source": {
+        "media": "Vision stratégique",
+        "titre": "Unemployment overall",
+        "date": "2024-2025",
+        "url": ""
+      }
+    },
+    {
+      "id": "poverty_rate",
+      "label": "Taux de pauvreté",
+      "unite": "%",
+      "series": [
+        { "date": "2015", "val": 13.9 },
+        { "date": "2023", "val": 15.4 },
+        { "date": "2024", "val": 15.6 }
+      ],
+      "source": {
+        "media": "Vision stratégique",
+        "titre": "Poverty rate",
+        "date": "2023-2024",
+        "url": ""
+      }
+    },
+    {
+      "id": "manufacturing_share",
+      "label": "Part de l'industrie dans le PIB",
+      "unite": "%",
+      "series": [
+        { "date": "1973", "val": 20.0 },
+        { "date": "2022", "val": 10.5 },
+        { "date": "2024", "val": 10.0 }
+      ],
+      "source": {
+        "media": "Vision stratégique",
+        "titre": "Manufacturing share of GDP",
+        "date": "2022-2024",
+        "url": ""
+      }
+    },
+    {
+      "id": "trade_deficit",
+      "label": "Déficit commercial",
+      "unite": "Mds€",
+      "series": [
+        { "date": "2022", "val": -164 },
+        { "date": "2023", "val": -100 },
+        { "date": "2024", "val": -120 }
+      ],
+      "source": {
+        "media": "Vision stratégique",
+        "titre": "Trade deficit",
+        "date": "2023-2024",
+        "url": ""
+      }
+    },
+    {
+      "id": "temp_employment_share",
+      "label": "Part des contrats temporaires",
+      "unite": "%",
+      "series": [
+        { "date": "1980", "val": 5 },
+        { "date": "1995", "val": 6 },
+        { "date": "2022", "val": 14 }
+      ],
+      "source": {
+        "media": "Vision stratégique",
+        "titre": "Temporary employment share",
+        "date": "1980-2022",
+        "url": ""
+      }
+    },
+    {
+      "id": "fertility_rate",
+      "label": "Indice de fécondité",
+      "unite": "enfants/femme",
+      "series": [
+        { "date": "2010", "val": 2.10 },
+        { "date": "2023", "val": 1.68 },
+        { "date": "2024", "val": 1.60 }
+      ],
+      "source": {
+        "media": "Vision stratégique",
+        "titre": "Fertility rate",
+        "date": "2010-2024",
+        "url": ""
+      }
+    }
+  ],
+  "paragraphes": [
+    {
+      "id": "p1",
+      "titre": "Croissance et inflation",
+      "texte": "La croissance reste atone et l'inflation se calme. Après une progression de 1,4 % du PIB en 2023, la croissance n'est plus que de 1,1 % en 2024. L'inflation, qui avait atteint un pic de 5,2 % en 2022 puis 4,9 % en 2023, ralentit à 2 % en 2024.",
+      "liens": [
+        { "type": "serie", "ref": "gdp_growth", "plage": ["2023", "2024"] },
+        { "type": "serie", "ref": "inflation_rate", "plage": ["2022", "2024"] }
+      ]
+    },
+    {
+      "id": "p2",
+      "titre": "Chômage et emploi",
+      "texte": "Le marché du travail reste tendu : le taux de chômage se maintient à 7,5 % en 2024-2025, tandis que les jeunes restent durement touchés. Plus de 50 % des 15-24 ans occupent un contrat non permanent et la part des contrats temporaires est passée de 5 % dans les années 1980 à 14 % en 2022.",
+      "liens": [
+        { "type": "serie", "ref": "unemployment_total", "plage": ["2023", "2025"] },
+        { "type": "serie", "ref": "temp_employment_share", "plage": ["1980", "2022"] }
+      ]
+    },
+    {
+      "id": "p3",
+      "titre": "Pauvreté et inégalités",
+      "texte": "La pauvreté monétaire progresse : 15,4 % des Français vivent sous le seuil de pauvreté en 2023 contre 13,9 % en 2015. Les inégalités territoriales et intergénérationnelles se creusent.",
+      "liens": [
+        { "type": "serie", "ref": "poverty_rate", "plage": ["2015", "2024"] }
+      ]
+    },
+    {
+      "id": "p4",
+      "titre": "Désindustrialisation",
+      "texte": "La désindustrialisation fragilise l'économie. La part de l'industrie manufacturière dans le PIB est tombée autour de 10 % contre près de 20 % il y a un demi‑siècle. Le déficit commercial atteint des niveaux record à -164 Mds € en 2022, se réduisant à -100 Mds € en 2023.",
+      "liens": [
+        { "type": "serie", "ref": "manufacturing_share", "plage": ["1973", "2024"] },
+        { "type": "serie", "ref": "trade_deficit", "plage": ["2022", "2024"] }
+      ]
+    },
+    {
+      "id": "p5",
+      "titre": "Crise démographique",
+      "texte": "La démographie française s'essouffle. L'indice de fécondité chute à 1,68 enfant par femme en 2023, un minimum historique, et les naissances sont en forte baisse depuis 2010.",
+      "liens": [
+        { "type": "serie", "ref": "fertility_rate", "plage": ["2010", "2024"] }
+      ]
+    }
+  ],
+  "tuiles": [
+    {
+      "id": "t1",
+      "titre": "Pouvoir d’achat",
+      "consequence": "L'inflation élevée réduit le pouvoir d'achat des ménages.",
+      "solution": "Mettre en place une indexation des salaires et des aides sociales sur l'inflation.",
+      "kpi": "inflation_rate",
+      "delai": "6-12 mois",
+      "impact": "fort"
+    },
+    {
+      "id": "t2",
+      "titre": "Chômage des jeunes",
+      "consequence": "Le taux de chômage des 15-24 ans reste très élevé.",
+      "solution": "Créer des programmes dédiés à l'emploi des jeunes et favoriser l'apprentissage.",
+      "kpi": "unemployment_total",
+      "delai": "12 mois",
+      "impact": "modéré"
+    },
+    {
+      "id": "t3",
+      "titre": "Désindustrialisation",
+      "consequence": "La part de l'industrie décline et la France perd des emplois industriels.",
+      "solution": "Encourager la relocalisation et investir dans l'industrie verte.",
+      "kpi": "manufacturing_share",
+      "delai": "24 mois",
+      "impact": "fort"
+    },
+    {
+      "id": "t4",
+      "titre": "Déficit commercial",
+      "consequence": "Le déficit extérieur se creuse à des niveaux records.",
+      "solution": "Diversifier l'offre exportatrice et réduire la dépendance énergétique.",
+      "kpi": "trade_deficit",
+      "delai": "18 mois",
+      "impact": "modéré"
+    },
+    {
+      "id": "t5",
+      "titre": "Précarité des emplois",
+      "consequence": "La part des contrats temporaires explose, surtout chez les jeunes.",
+      "solution": "Renforcer l'accès à des contrats durables et limiter l'usage abusif des CDD.",
+      "kpi": "temp_employment_share",
+      "delai": "12 mois",
+      "impact": "modéré"
+    },
+    {
+      "id": "t6",
+      "titre": "Crise démographique",
+      "consequence": "La natalité en chute libre déséquilibre le rapport actifs/retraités.",
+      "solution": "Mettre en place des politiques familiales incitatives et l'amélioration des services de garde.",
+      "kpi": "fertility_rate",
+      "delai": "48 mois",
+      "impact": "fort"
+    }
+  ],
+  "sources": [
+    {
+      "media": "Vision stratégique de sortie de crise pour la France",
+      "titre": "Rapport complet",
+      "date": "2024-2025",
+      "url": ""
+    },
+    {
+      "media": "INSEE",
+      "titre": "Indicateurs économiques",
+      "date": "2024",
+      "url": "https://www.insee.fr"
+    }
+  ]
+}
